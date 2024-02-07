@@ -1,6 +1,6 @@
 # Weather React App
 
-Web: [Weather React App](https://react-weather-application-tania.netlify.app/).
+Website: [Weather React App](https://react-weather-application-tania.netlify.app/).
 
 The application is built in React on the basis of the SheCodes Weather API for the real-life forecast.
 
