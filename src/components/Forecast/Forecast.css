@@ -1,0 +1,53 @@
+:root {
+  --white: #f3f8fe;
+  --black: #332926;
+}
+.Forecast-container {
+  background: rgba(255, 251, 251, 0.6);
+  backdrop-filter: blur(2px);
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 8px;
+  padding-right: 12px;
+  padding-left: 12px;
+}
+.daily-forecast {
+  list-style: none;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black);
+  display: block;
+  margin-bottom: 0px;
+  padding: 0;
+
+}
+.icon-forecast {
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+ 
+}
+.max-temperature {
+  font-weight: 600;
+}
+.min-temperature {
+  font-weight: 300;
+  color: #3d5245;
+}
+.units-forecast-max {
+  font-size: 10px;
+  margin-left: 1px;
+  position:relative;
+  top:-6px;
+}
+.units-forecast-min {
+  font-size: 10px;
+  margin-left: 1px;
+  position:relative;
+  top:-6px;
+  font-weight: 300;
+  color: #3d5245;
+}
+

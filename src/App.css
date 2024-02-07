@@ -1,0 +1,214 @@
+:root {
+  --white: #f3f8fe;
+  --black: #332926;
+  --accent: linear-gradient(
+    102.92deg,
+    #2a2e25 5.63%,
+    #393e33 23.27%,
+    #5a6151 46.01%,
+    #4f5547 62.72%,
+    #393e33 78.17%,
+    #2a2e25 94.75%
+  );
+}
+.container {
+  display: block;
+  margin: 0 auto;
+  max-width: 460px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top: 60px;
+  padding-left: 27px;
+  padding-right: 24px;
+  padding-bottom: 2px;
+  background-image: 
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/082/299/original/Frame_21.png?1684268122");
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.2));
+}
+h1 {
+  color: var(--white);
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 60px;
+  text-align: center;
+}
+.city-name {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-gap: 1px;
+}
+.icon-weather {
+  width: 70px;
+  height: 70px;
+}
+h2 {
+  font-weight: 500;
+  margin-top: 12px;
+  margin-left: 24px;
+  color: var(--white);
+  font-size: 32px;
+  line-height: 100%;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 8px;
+}
+.city-description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 8px;
+}
+.description-list {
+  list-style: none;
+  text-align: left;
+  margin-top: 32px;
+  padding-left: 0px;
+  color: var(--white);
+  font-size: 20px;
+  line-height: 120%;
+  font-weight: 200;
+}
+li {
+  margin-bottom: 12px;
+}
+.temperature-list {
+  list-style: none;
+  text-align: right;
+  margin-top: 32px;
+  padding-right: 0px;
+}
+.degree {
+  font-weight: 600;
+  font-size: 90px;
+  line-height: 100%;
+  background: linear-gradient(
+    102.92deg,
+    #2a2e25 5.63%,
+    #393e33 23.27%,
+    #5a6151 46.01%,
+    #4f5547 62.72%,
+    #393e33 78.17%,
+    #2a2e25 94.75%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+}
+.cels-fahr {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: #64685f;
+}
+.current {
+  color: #2c3027;
+  font-size: 40px;
+  font-weight: 600;
+  
+}
+.toClick a{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: #64685f;
+  text-decoration: none;
+}
+
+.footer {
+  color: var(--white);
+  font-weight: 200;
+  font-size: 12px;
+  margin-top: 60px;
+  text-align: center;
+ 
+}
+.footer a {
+  text-decoration: none;
+  color: #8b8f86;
+  font-weight: 700;
+}
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+form {
+  display: flex;
+}
+.search-city {
+  width: 100%;
+  height: 48px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(255, 251, 251, 0.6);
+  backdrop-filter: blur(2px);
+  padding: 12px 16px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: #64685f;
+  margin-right: 18px;
+}
+.search-button {
+  background: var(--accent);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 160px;
+  height: 48px;
+  border: none;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--white);
+  cursor: pointer;
+  transition: ease-in-out 900ms;
+}
+.search-button:hover {
+  color: #131212;
+  background: linear-gradient(
+    102.92deg,
+    #e3e1cf 5.63%,
+    #c2c0ab 26.56%,
+    #a09d8a 46.01%,
+    #a09d8a 62.72%,
+    #b3b09e 78.17%,
+    #e4e2d0 94.75%
+  );
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+}
+.loader {
+  display: block;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(0, -50%);
+}
+
+.suggestions {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background: rgba(255, 251, 251, 0.6);
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.suggestion {
+    padding: 8px 15px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.suggestion:hover {
+    background-color: #f5f5f5;
+}
+
